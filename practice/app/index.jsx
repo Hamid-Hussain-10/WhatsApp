@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { TouchableOpacity, View } from "react-native";
-import Home from "./Home";
 import { Feather, Ionicons } from "@expo/vector-icons";
+import Home from "./Home";
 
 const Stack = createNativeStackNavigator();
 
@@ -10,8 +10,16 @@ const Index = () => {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerStyle: { backgroundColor: "#000000" },
+        headerStyle: {
+          backgroundColor: "#000000",
+        },
+        headerTitleStyle: {
+          fontSize: 22,
+          fontWeight: "bold",
+          color: "#ffffff",
+        },
         headerTintColor: "#ffffff",
+        headerTitleAlign: "left",
       }}
     >
       <Stack.Screen
@@ -20,14 +28,21 @@ const Index = () => {
         options={({ navigation }) => ({
           title: "WhatsApp",
           headerBackVisible: false,
+          headerShadowVisible: false,
           headerRight: () => (
-            <View style={{ flexDirection: "row", gap: 20, marginRight: 20 }}>
+            <View
+              style={{
+                flexDirection: "row",
+                gap: 16,
+                paddingRight: 10,
+              }}
+            >
               <TouchableOpacity onPress={() => alert("Camera clicked")}>
                 <Ionicons name="camera-outline" size={22} color="#ffffff" />
               </TouchableOpacity>
 
-              <TouchableOpacity onPress={() => alert("more options")}>
-                <Feather	 name="more-vertical" size={20} color="#ffffff" />
+              <TouchableOpacity onPress={() => alert("More options")}>
+                <Feather name="more-vertical" size={22} color="#ffffff" />
               </TouchableOpacity>
             </View>
           ),
