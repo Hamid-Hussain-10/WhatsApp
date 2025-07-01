@@ -11,14 +11,14 @@ const Index = () => {
       initialRouteName="Home"
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#000000",
+          backgroundColor: "#0B1014",
         },
         headerTitleStyle: {
-          fontSize: 22,
+          fontSize: 24,
           fontWeight: "bold",
-          color: "#ffffff",
+          color: "#fff",
         },
-        headerTintColor: "#ffffff",
+        headerTintColor: "#fff",
         headerTitleAlign: "left",
       }}
     >
@@ -33,8 +33,8 @@ const Index = () => {
             <View
               style={{
                 flexDirection: "row",
-                gap: 16,
-                paddingRight: 10,
+                gap: 15,
+                paddingBottom: 2,
               }}
             >
               <TouchableOpacity onPress={() => alert("Camera clicked")}>

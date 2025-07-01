@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#1a1918",
+    backgroundColor: "#0B1014",
   },
   searchBox: {
     flexDirection: "row",

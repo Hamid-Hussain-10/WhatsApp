@@ -9,7 +9,7 @@ function TopNav() {
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: "#83a928",
+          backgroundColor: "#4c4e4a",
           borderRadius: 25,
         },
         tabBarLabelStyle: {
